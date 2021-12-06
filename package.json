@@ -6,12 +6,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint:js": "eslint --ext .vue --ignore-path .gitignore .",
-    "lint": "yarn lint:js",
-    "lint:fix": "eslint --fix --ext .vue --ignore-path .gitignore .",
-    "predeploy": "nuxt generate",
-    "deploy": "gh-pages -d dist"
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
